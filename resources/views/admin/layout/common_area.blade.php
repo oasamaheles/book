@@ -12,22 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/logo/favicon.png')}}">
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nouislider.css">
-    <link rel="stylesheet" href="assets/css/backtotop.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/flaticon_kindedo.css">
-    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-    <link rel="stylesheet" href="assets/css/spacing.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/meanmenu.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/swiper-bundle.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/nouislider.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/backtotop.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/flaticon_kindedo.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/font-awesome-pro.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/spacing.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             <div class="preloader-thumb-wrap">
                 <div class="preloader-thumb">
                     <div class="preloader-border"></div>
-                    <img src="assets/img/bg/preloader.png" alt="img not found!">
+                    <img src="{{asset('assets/img/bg/preloader.png')}}" alt="img not found!">
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="bd-header-logo">
                                 <a href="index.html">
-                                    <img width="5" height="60" src="assets/img/logo/svg.svg" alt="logo">
+                                    <img width="5" height="60" src="{{asset('assets/img/logo/svg.svg')}}" alt="logo">
                                 </a>
                             </div>
                             <div class="bd-main-menu d-none d-lg-flex align-items-center">
@@ -280,7 +280,7 @@
                                                         <li>
                                                             <div class="bd-header-cart-content">
                                                                 <div class="bd-header-cart-thumb">
-                                                                    <a href="shop-details.html"> <img src="assets/img/shop/9.2.jpg" alt="img not found!"></a>
+                                                                    <a href="shop-details.html"> <img src="{{asset('assets/img/shop/9.2.jpg')}}" alt="img not found!"></a>
                                                                 </div>
                                                                 <div class="bd-header-cart-title-wrapper">
                                                                     <h4 class="bd-header-cart-title"><a href="shop-details.html">Baby
@@ -316,12 +316,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bd-header-btn d-none d-xl-block">
+                                <div class="bd-header-btn d-none d-xl-block ">
                                     @if(Auth::user())
 
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <a="route('logout')" onclick="event.preventDefault();
+                                        <a href="route('logout')" onclick="event.preventDefault();
                                         this.closest('form').submit();" class="bd-btn">
                                             </a>
                                     </form>
@@ -351,14 +351,14 @@
 
 
 
-                                <!-- <div class="header-hamburger">
+                            <div class="header-hamburger">
                                     <button type="button" class="hamburger-btn offcanvas-open-btn">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </button>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -575,24 +575,24 @@
     <!-- serach popup area end here  -->
 
     <!-- JS here -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/waypoints.js"></script>
-    <script src="assets/js/bootstrap-bundle.js"></script>
-    <script src="assets/js/meanmenu.js"></script>
-    <script src="assets/js/swiper-bundle.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/nouislider.js"></script>
-    <script src="assets/js/magnific-popup.js"></script>
-    <script src="assets/js/parallax.js"></script>
-    <script src="assets/js/backtotop.js"></script>
-    <script src="assets/js/nice-select.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/isotope-pkgd.js"></script>
-    <script src="assets/js/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/jquery.odometer.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('assets/js/vendor/jquery.js')}}"></script>
+    <script src="{{asset('assets/js/vendor/waypoints.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap-bundle.js')}}"></script>
+    <script src="{{asset('assets/js/meanmenu.js')}}"></script>
+    <script src="{{asset('assets/js/swiper-bundle.js')}}"></script>
+    <script src="{{asset('assets/js/slick.js')}}"></script>
+    <script src="{{asset('assets/js/nouislider.js')}}"></script>
+    <script src="{{asset('assets/js/magnific-popup.js')}}"></script>
+    <script src="{{asset('assets/js/parallax.js')}}"></script>
+    <script src="{{asset('assets/js/backtotop.js')}}"></script>
+    <script src="{{asset('assets/js/nice-select.js')}}"></script>
+    <script src="{{asset('assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('assets/js/isotope-pkgd.js')}}"></script>
+    <script src="{{asset('assets/js/imagesloaded-pkgd.js')}}"></script>
+    <script src="{{asset('assets/js/ajax-form.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.appear.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.odometer.min.js')}}"></script>
+    <script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 

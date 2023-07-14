@@ -220,7 +220,7 @@
                                         <li class="navi-item active">
                                             <form method="POST" action="{{ route('logout') }}">
                                                 @csrf
-                                                <a="route('logout')" onclick="event.preventDefault();
+                                                <a href="{{route('logout')}}" onclick="event.preventDefault();
                                         this.closest('form').submit();" class="navi-link">
                                                     تسجيل الخروج
                                                     </a>
